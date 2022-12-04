@@ -1,0 +1,75 @@
+.footer {
+  background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, rgba(1, 22, 39, 1) 10%, rgba(1, 22, 39, 1) 100%);
+  padding: 50px 0;
+  margin-top: 280px;
+
+  &__cont {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1320px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  &__links {
+    margin-left: 30px;
+    margin-bottom: 50px;
+    width: 135px;
+
+    @media screen and (max-width: 600px) {
+      margin: 0 5px 50px;
+    }
+
+    h6 {
+      position: relative;
+      margin-bottom: 48px;
+      font-size: 18px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 57px;
+        height: 8px;
+        bottom: -21px;
+        background-image: url('../../img/divider.svg');
+        background-size: cover;
+      }
+    }
+
+    ul {
+      list-style: none;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    li {
+      margin-top: 21px;
+    }
+
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &__rights {
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  &__logo {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Merriweather';
+    margin-top: 26px;
+
+    span {
+      color: #41EAD4;
+    }
+  }
+
+  &__soc {
+    div {
+      display: flex;
+    }
+  }
+}

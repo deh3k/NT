@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+  padding: 0 30px;
+
+  &__logo {
+    font-family: 'Merriweather';
+    font-size: 20px;
+    color: #fff;
+    text-shadow: rgb(100 100 100) 0px 0px 8px;
+
+    span {
+      color: rgb(65, 234, 212);
+      text-shadow: rgb(100 100 100) 0px 0px 8px;
+    }
+  }
+
+  &__btn {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 12px;
+    text-shadow: rgb(100 100 100) 0px 0px 8px;
+
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

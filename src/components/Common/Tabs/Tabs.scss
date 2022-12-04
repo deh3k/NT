@@ -1,0 +1,46 @@
+.tabs {
+  display: flex;
+  justify-content: space-between;
+
+  &__wrapper {
+    margin-bottom: 150px;
+    
+    @media screen and (max-width: 1340px) {
+      margin-bottom: 70px;
+    }
+
+    @media screen and (max-width: 830px) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 18px;
+    font-family: 'Inter';
+    font-weight: 700;
+    padding: 5px 0 30px; 
+    white-space: nowrap;
+    color: rgb(172, 172, 172);
+    border-bottom: 1px solid rgba(65, 234, 212, 0.6);
+
+    @media screen and (max-width: 1340px) {
+      padding: 5px 8px 20px;
+    }
+
+    @media screen and (max-width: 830px) {
+      font-size: 15px;
+      white-space: normal;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__underline {
+    background-color: #41EAD4;
+    border-radius: 8px;
+  }
+}

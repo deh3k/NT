@@ -1,25 +1,34 @@
+import { motion } from 'framer-motion';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
+import Main from './components/Main/Main';
+import Reviews from './components/Reviews/Reviews';
+import Trips from './components/Trips/Trips';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Main />
+      <div className='cont'>
+        <Trips />
+        <About />
+        <Reviews />
+        <motion.div className="container"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ delay: 0.5, duration: 1 }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div className="title__wrapper-2">
+            <h2 className="title">See you soon!</h2>
+            <h6>We hope to meet each other <br /> very soon.</h6>
+          </div>
+        </motion.div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

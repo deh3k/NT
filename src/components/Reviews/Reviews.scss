@@ -1,0 +1,95 @@
+.reviews {
+  background: linear-gradient(0deg, rgba(1, 22, 39, 0.0) 0%, rgba(1, 22, 39, 1) 15%, rgba(1, 22, 39, 1) 85%, rgba(1, 22, 39, 0.0) 100%);
+  padding: 100px 0;
+  margin-bottom: 50px;
+
+  &__title {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+
+  &__subh {
+    font-size: 24px;
+    text-align: center;
+
+    @media screen and (max-width: 830px) {
+      font-size: 18px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    max-width: 1044px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 830px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    padding: 75px 40px 75px 75px;
+    background-color: #02223B;
+
+    @media screen and (max-width: 900px) {
+      padding: 75px 20px 75px 55px;
+    }
+
+    @media screen and (max-width: 830px) {
+      padding: 45px 20px 45px 55px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 45px 10px 45px 35px;
+    }
+  }
+
+  &__quote {
+    position: relative;
+    font-size: 18px;
+    line-height: 190%;
+    margin-bottom: 25px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 32px;
+      height: 25px;
+      top: 0;
+      left: -45px;
+      background-image: url('../../img/quotes.svg');
+    }
+
+    p {
+      margin-top: 16px;
+      font-weight: 300;
+      line-height: 190%;
+    }
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 700;
+    letter-spacing: 2px;
+
+
+    &__avatar {
+      width: 80px;
+      height: 80px;
+      margin-left: 40px;
+      margin-right: 12px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+    }
+  }
+}
